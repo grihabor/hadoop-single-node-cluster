@@ -1,0 +1,9 @@
+version: "3"
+services:
+  hadoop:
+    build: .
+    ports: ["8088:8088"]
+  pyspark:
+    depends_on: [hadoop]
+    build:
+      context: pyspark

@@ -5,4 +5,6 @@ if [ ! -d "/tmp/hadoop-hduser/dfs/name" ]; then
 fi
 $HADOOP_HOME/sbin/start-dfs.sh
 $HADOOP_HOME/sbin/start-yarn.sh
-bash
+
+# sleep forever
+while true; do sleep 30; done;
